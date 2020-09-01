@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@tailwind base;
+
+body {
+    @apply font-body;
+    background: #f6f6f6;
+}
+
+h1 {
+    @apply font-display text-5xl font-light;
+}
+h2 {
+    @apply font-display text-3xl font-light text-blue-700;
+}
+h3 {
+    @apply font-display text-2xl font-light;
+}
+h4 {
+    @apply font-display text-xl font-medium;
+}
+h3 + p {
+    @apply text-lg text-blue-700;
+    line-height: 1.5rem;
+}
+
+ul {
+    @apply list-disc;
+    margin-left: 2rem;
+}
+ul.pills {
+    @apply list-none mb-6 ml-2 inline-flex flex-col;
+}
+ul.pills > li {
+    @apply mb-1 px-3 py-1 rounded-full bg-gray-300;
+    width: fit-content;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@tailwind components;
+
+@tailwind utilities;
