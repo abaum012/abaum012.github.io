@@ -41,6 +41,10 @@ a:hover {
     text-decoration: underline;
 }
 
+svg {
+    @apply w-5 h-5 mr-3 self-center;
+}
+
 @tailwind components;
 
 @tailwind utilities;
